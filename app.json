@@ -18,5 +18,15 @@
         "size": "free"
       }
     },
-    "stack": "container"
+    "stack": "container",
+    "env": {
+      "HONEYDB_API_ID": {
+        "description": "Login to Honeydb.io to retrieve your API ID.",
+        "value": ""
+      },
+      "HONEYDB_API_KEY": {
+        "description": "Login to Honeydb.io to retrieve your API Key.",
+        "value": ""
+      }
+    }
   }
