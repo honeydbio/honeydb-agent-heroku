@@ -13,3 +13,9 @@ Deploy the HoneyDB Agent on Heroku quickly and easily by clicking the button abo
 5. Click Deploy app.
 
 That's it! Once the install completes you will be running a web honeypot in Heroku. Honeypot events will be sent to the HoneyDB web site. When you login to HoneyDB you can filter to see events from your honeydb agent(s).
+
+## Additional setup (optional)
+
+Setup a domain or sub-domain to point to your Honeydb Agent Heroku deployments.
+
+More to come...
