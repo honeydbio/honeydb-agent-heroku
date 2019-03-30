@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+echo "Configuring NGINX service..."
+sed -i 's/PORT/'"$PORT"'/' /etc/nginx/nginx.conf
+
+if [ -z $HONEYDB_API_ID ];
+then
+	echo "WARNING: HONEYDB_API_ID not set!"
+fi
+
+if [ -z $HONEYDB_API_KEY ];
+then
+	echo "WARNING: HONEYDB_API_KEY not set!"
+fi
+
+echo "Starting NGINX..."
+nginx
+
+echo "Configuring honeydb-agent..."
+sed -i 's/HONEYDB_API_ID/'"$HONEYDB_API_ID"'/' /etc/honeydb/agent.conf
+sed -i 's/HONEYDB_API_KEY/'"$HONEYDB_API_KEY"'/' /etc/honeydb/agent.conf
+
+echo "Starting honeydb-agent!"
+honeydb-agent
+
+echo "Good-bye!"
+
