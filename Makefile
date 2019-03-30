@@ -1,22 +1,24 @@
+APP?=
+
 all: build push release logs
 
 build:
-	docker build -t honeydb-heroku .
+	docker build -t honeydb-agent-heroku .
 
 build-no-cache:
-	docker build --no-cache -t honeydb-heroku .
+	docker build --no-cache -t honeydb-agent-heroku .
 
 push:
-	heroku container:push web --app fast-springs-51709
+	heroku container:push web --app $(APP)
 
 release:
-	heroku container:release web --app fast-springs-51709
+	heroku container:release web --app $(APP)
 
 open:
-	heroku open --app fast-springs-51709
+	heroku open --app $(APP)
 
 logs:
-	heroku logs --tail --app fast-springs-51709
+	heroku logs --tail --app $(APP)
 
 run:
-	docker run -i -t honeydb-heroku /bin/bash
+	docker run -i -t honeydb-agent-heroku /bin/bash
