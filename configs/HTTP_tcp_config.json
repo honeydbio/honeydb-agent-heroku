@@ -1,0 +1,195 @@
+{
+    "plugin": "HTTP_tcp",
+    "honor-xff-header": true,
+    "responses": [
+        {
+            "name": "robots",
+            "request_method": "GET",
+            "request_paths": ["/robots.txt"],
+            "response_header": "robots.response-headers",
+            "response_body": "robots.response-body"
+        },
+        {
+            "name": "robots-users",
+            "request_method": "GET",
+            "request_paths": ["/users.txt"],
+            "response_header": "robots-users.response-headers",
+            "response_body": "robots-users.response-body"
+        },
+        {
+            "name": "robots-customers",
+            "request_method": "GET",
+            "request_paths": ["/customers"],
+            "response_header": "robots-customers.response-headers",
+            "response_body": "robots-customers.response-body"
+        },
+        {
+            "name": "passwd",
+            "request_method": "GET",
+            "request_paths": ["../../../etc/passwd"],
+            "response_header": "default-txt.response-headers",
+            "response_body": "passwd.response-body"
+        },
+        {
+            "name": "wordpress-login",
+            "request_paths": ["/wp-login.php"],
+            "request_method": "GET",
+            "response_header": "default-html.response-headers",
+            "response_body": "wordpress-login2.response-body"
+        },
+        {
+            "name": "wordpress-config",
+            "request_paths": ["/wp-config.txt"],
+            "request_method": "GET",
+            "response_header": "default-html.response-headers",
+            "response_body": "wordpress-config-txt.response-body"
+        },
+        {
+            "name": "phpmyadmin-login",
+            "request_method": "GET",
+            "request_paths": ["phpmyadmin", "administratorphpmyadmin", "sqlmyadmin", "admindb", "adminsqladmin", "phpmyadminscriptssetup.php", "dbwebadmin", "adminphpmyadmin", "myadmin", "administratoradmin", "administratorpma", "administratordb", "phpmyadminscriptssetup.inc.php", "phpMyAdmin-2scriptssetup.php", "myadminscriptssetup.php", "pmascriptssetup.php", "2phpmyadmin", "mysqldbadmin", "mysqlsqlmanager", "pma2011", "pma2012", "php-my-admin", "pma", "sqlwebsql"],
+            "response_header": "default-html.response-headers",
+            "response_body": "phpmyadmin-login.response-body"
+        },
+        {
+            "name": "weblogic",
+            "request_method": "GET",
+            "request_paths": ["/wls-wsat/"],
+            "response_header": "default-html.response-headers",
+            "response_body": "weblogic-default.response-body"
+        },
+        {
+            "name": "weblogic-post",
+            "request_method": "POST",
+            "request_paths": ["/wls-wsat/"],
+            "response_header": "default-html.response-headers",
+            "response_body": "weblogic-post.response-body"
+        },
+        {
+            "name": "tomcat-manager",
+            "request_method": "GET",
+            "request_paths": ["/manager"],
+            "response_header": "default-html.response-headers",
+            "response_body": "tomcat-manager.response-body"
+        },
+        {
+            "name": "tomcat-manager-401",
+            "request_method": "POST",
+            "request_paths": ["/manager"],
+            "response_header": "default-html.response-headers",
+            "response_body": "tomcat-manager-401.response-body"
+        },
+        {
+            "name": "hello-peppa",
+            "request_method": "POST",
+            "request_paths": ["/7788.php","/8899.php","/9678.php","/ak47.php","/conflg.php","/db.init.php","/db__.init.php","/db_session.init.php","/feixiang.php","/lindex.php","/mx.php","/phpstudy.php","/qq.php","/s.php","/sheep.php","/w.php","/wc.php","/weixiao.php","/wshell.php","/wuwu11.php","/xiaoma.php","/xshell.php","/xw.php","/xw1.php","/xx.php"],
+            "response_header": "default-html.response-headers",
+            "response_body": "hello-peppa.response-body"
+        },
+        {
+            "name": "linksys-e-series-devices",
+            "request_method": "POST",
+            "request_paths": ["/tmBlock.cgi", "/tmUnblock.cgi", "/hndBlock.cgi", "/hndUnblock.cgi"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "vacron-nvr-devices",
+            "request_method": "POST",
+            "request_paths": ["/board.cgi"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "d-link",
+            "request_method": "POST",
+            "request_paths": ["/command.php", "/soap.cgi", "/HNAP1"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "d-link",
+            "request_method": "GET",
+            "request_paths": ["/command.php", "/soap.cgi", "/HNAP1", "/uir/", "chkisg.html"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "engenius-enshare-iot-gigabit-cloud-service",
+            "request_method": "POST",
+            "request_paths": ["/web/cgi/usbinteract.cgi"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "avtech-ip-camera",
+            "request_method": "POST",
+            "request_paths": ["/cgi-bin/nobody/Search.cgi"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "zyxel-routers",
+            "request_method": "GET",
+            "request_paths": ["/cgi-bin/luci/"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "netgain-enterprise-manager",
+            "request_method": "POST",
+            "request_paths": ["/u/jsp/tools/exec.jsp"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "nuuo-nvrmini",
+            "request_method": "POST",
+            "request_paths": ["/handle_iscsi.php", "/cgi-bin/cgi_system"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "huawei-device",
+            "request_method": "POST",
+            "request_paths": ["/ctrlt/DeviceUpgrade_1"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "realtek-sdk-miniigd",
+            "request_method": "POST",
+            "request_paths": ["/picsdesc.xml"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "netgear-router",
+            "request_method": "POST",
+            "request_paths": ["/setup.cgi", "/cgi-bin/"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "eir-router",
+            "request_method": "POST",
+            "request_paths": ["/UD/act"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "cctv-dvr",
+            "request_method": "GET",
+            "request_paths": ["/language/Swedish$"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        },
+        {
+            "name": "mvpower-dvr",
+            "request_method": "GET",
+            "request_paths": ["/shell"],
+            "response_header": "router.response-headers",
+            "response_body": "default-error.response-body"
+        }
+    ]
+}

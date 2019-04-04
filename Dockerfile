@@ -1,4 +1,4 @@
-FROM debian:jessie-slim
+FROM debian:stretch-slim
 
 # Install needed packages
 RUN apt-get update && apt-get install -y curl debian-keyring debian-archive-keyring apt-transport-https nginx
@@ -14,6 +14,7 @@ RUN curl -1sLf 'https://dl.cloudsmith.io/public/honeydb/honeydb-agent/cfg/setup/
 COPY configs/nginx.conf /etc/nginx/nginx.conf
 COPY configs/agent.conf /etc/honeydb/agent.conf
 COPY configs/services.conf /etc/honeydb/services.conf
+COPY configs/HTTP_tcp_config.json /etc/honeydb/HTTP_tcp_config.json
 
 # Copy script
 COPY scripts/honeydb /usr/bin/honeydb
