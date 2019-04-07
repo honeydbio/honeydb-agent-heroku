@@ -42,7 +42,7 @@ Note: You can configure a sub-domain with your app Dyno by navigating Settings i
 
 ### Configure ProxyPass with an existing web server
 
-If you have an exsiting web site and access to modify web server config, you can use ProxyPass. ProxyPass lets you define a path on your existing site, which maps back to yoour HoneyDB Agent Heroku instance. For example if a user navigated to http://your-site.com/blog that would be mapped to http://your-heroku-dyno.herokuapps.com
+If you have an exsiting web site and access to modify web server config, you can use ProxyPass. ProxyPass lets you define a path on your existing site, which maps back to yoour HoneyDB Agent Heroku instance. For example if a user navigated to `http://your-site.com/blog` that would be mapped to `http://your-heroku-dyno.herokuapps.com`.
 
 For Apache HTTPD Server, see documentation on [ProxyPass Directive](https://httpd.apache.org/docs/2.4/mod/mod_proxy.html#proxypass).
 
