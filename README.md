@@ -36,7 +36,7 @@ Another option is to create a sub-domain with one or more of your existing domai
 * ftp
 * webmail
 
-![Add Domains](https://raw.githubusercontent.com/foospidy/honeydb-agent-heroku/images/domains.png)
+![Add Domains](https://raw.githubusercontent.com/foospidy/honeydb-agent-heroku/master/images/domains.png)
 
 Note: You can configure a sub-domain with your app Dyno by navigating Settings in the Heroku Dahsboard, also see [Heroku documenation](https://devcenter.heroku.com/articles/custom-domains).
 
