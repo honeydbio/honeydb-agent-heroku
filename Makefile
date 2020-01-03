@@ -1,12 +1,15 @@
 APP?=
 
-all: build push release logs
+all: build login push release logs
 
 build:
 	docker build -t honeydb-agent-heroku .
 
 build-no-cache:
 	docker build --no-cache -t honeydb-agent-heroku .
+
+login:
+	heroku container:login
 
 push:
 	heroku container:push web --app $(APP)
