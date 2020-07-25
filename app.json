@@ -1,7 +1,7 @@
 {
     "name": "HoneyDB Agent",
     "description": "Deploy a HoneyDB Agent and contribute to HoneyDB - Community driven honeypot sensor data collection and aggregation.",
-    "logo": "https://riskdiscovery.com/honeydb/static/img/honeydb_symbol_yellow_white.jpg",
+    "logo": "https://honeydb.io/static/img/honeydb_symbol_yellow_white.jpg",
     "keywords": [
       "honeydb",
       "honeypot",
@@ -10,7 +10,7 @@
       "security",
       "cybersecurity"
     ],
-    "website": "http://honeydb.io",
+    "website": "https://honeydb.io",
     "repository": "https://github.com/foospidy/honeydb-agent-heroku",
     "formation": {
       "web": {
