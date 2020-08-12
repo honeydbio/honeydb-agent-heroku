@@ -24,4 +24,4 @@ logs:
 	heroku logs --tail --app $(APP)
 
 run:
-	docker run -i -t honeydb-agent-heroku /bin/bash
+	docker run -i -p 8080:8080 -t honeydb-agent-heroku /bin/bash
